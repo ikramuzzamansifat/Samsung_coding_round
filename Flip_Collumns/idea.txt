@@ -1,0 +1,10 @@
+Problem Statement: 
+
+https://www.hackerrank.com/contests/target-samsung-13-nov19/challenges/flip-columns/problem
+
+Idea: 
+1. first we will see whether a row is exist twice or more..   (Using map) 
+2. Then we will see every possible row type, whether that row is possible by inverting k times into all 1's.   
+3. If possible-  We will check if it is > mx. then we will update it with mx. If(k>=noz && (k-noz)%2==0)
+4. print(mx) 
+
