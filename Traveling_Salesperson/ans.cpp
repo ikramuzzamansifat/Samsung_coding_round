@@ -1,3 +1,6 @@
+// Problem Link: https://www.hackerrank.com/contests/target-samsung-13-nov19/challenges/travelling-salesman-4/problem
+// Idea: https://www.youtube.com/watch?v=JE0JE8ce1V0
+
 #include <iostream>
 using namespace std;
 #define REP(i,a,b) for(int i=a; i<b; i++)
@@ -12,7 +15,8 @@ int tsp(int mask, int pos)
     
     int ans = inf;
     REP(i,0,n){
-        if((mask&(1<<i)) == 0){
+        // below line....***
+        if((mask&(1<<i)) == 0){    
             int newAns = dist[pos][i] + tsp(mask|(1<<i),i);
             ans = min(ans, newAns);
         }
